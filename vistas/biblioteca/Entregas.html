@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="../../img/icono.svg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/internalPagesStyle.css" />
+    <!-- Icons -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+    <title>Biblioteca</title>
+</head>
+
+<body>
+    <div class="d-flex" id="content-wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="bg-primary">
+            <!-- LOGO  -->
+            <div class="logo d-flex">
+                <a href="../Home.html">
+                    <h4 class="text-light font-weight-bold mb-0"><i class="fas fa-book-open"></i> BIBLIOTECA</h4>
+                </a>
+            </div><!-- FIN LOGO  -->
+
+            <!-- MENU  -->
+            <div class="menu">
+                <div class="hover-sidebar">
+                    <a href="../Home.html" class="d-block text-light p-3 border-0"
+                        ><i class="fas fa-home lead mr-2"></i> Inicio</a
+                    >
+                </div>
+                <div class="hover-sidebar">
+                    <a href="../Usuarios.html" class="d-block text-light p-3 border-0"
+                        ><i class="fas fa-users lead mr-2"></i> Usuarios</a
+                    >
+                </div>
+
+                <!-- CONTABILIDAD -->
+                <div class="subtitle-left">
+                    <h5 class="subTitles">Contabilidad</h5>
+                    <div class="hover-sidebar">
+                        <a href="../contabilidad/TipoCuenta.html" class="d-block text-light p-3 border-0">
+                            <i class="ion-pricetags lead mr-2"></i>
+                            Tipo de cuenta
+                        </a>
+                    </div>
+                    <div class="hover-sidebar">
+                        <a href="../contabilidad/Cuenta.html" class="d-block text-light p-3 border-0">
+                            <i class="ion-pricetag lead mr-2"></i>
+                            Cuenta
+                        </a>
+                    </div>
+                    <div class="hover-sidebar">
+                        <a href="../contabilidad/Comprobantes.html" class="d-block text-light p-3 border-0">
+                            <i class="fas fa-receipt lead mr-2"></i>
+                            Comprobantes
+                        </a>
+                    </div>
+                    <ul class="d-block text-light p-3 border-0 m-0">
+                        <li class="dropdown list-unstyled">
+                            <a
+                                class="dropdown-toggle d-block text-light border-0 "
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            ><i class="uil uil-folder lead mr-0"></i> Reportes</a>
+                            <div class="dropdown-menu dropdown-menu-bottom" aria-labelledby="navbarDropdown">
+                                <a href="../contabilidad/BalanceGeneral.html" class="dropdown-item"
+                                    ><i class="uil uil-chart-growth lead mr-2"></i> Balance General</a
+                                >
+                                <a href="../contabilidad/EstadoResultado.html" class="dropdown-item"
+                                    ><i class="fas fa-window-restore lead mr-2"></i> Estado Resultados</a
+                                >
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- FIN CONTABILIDAD -->
+
+                <!-- BIBLIOTECA -->
+                <div class="subtitle-left">
+                    <h5 class="subTitles">Biblioteca</h5>
+                    <div class="hover-sidebar">
+                        <a href="../biblioteca/Autor.html" class="d-block text-light p-3 border-0">
+                            <i class="fas fa-user-alt lead mr-2"></i>
+                            Autor
+                        </a>
+                    </div>
+                    <div class="hover-sidebar">
+                        <a href="../biblioteca/Libro.html" class="d-block text-light p-3 border-0">
+                            <i class="fas fa-book lead mr-2"></i>
+                            Libro
+                        </a>
+                    </div>
+                    <div class="hover-sidebar">
+                        <a href="../biblioteca/Prestamos.html" class="d-block text-light p-3 border-0">
+                            <i class="fuil uil-books lead mr-2"></i>
+                            Prestamos
+                        </a>
+                    </div>
+                    <ul class="d-block text-light p-3 border-0 m-0">
+                        <li class="dropdown list-unstyled">
+                            <a
+                                class="dropdown-toggle d-block text-light border-0 "
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            ><i class="uil uil-folder lead mr-0"></i> Reportes</a>
+                            <div class="dropdown-menu dropdown-menu-bottom" aria-labelledby="navbarDropdown">
+                                <a href="../biblioteca/Entregas.html" class="dropdown-item"
+                                    ><i class="uil uil-parcel lead mr-2"></i> Entregas</a
+                                >
+                                <a href="../biblioteca/ReporteCruzado.html" class="dropdown-item"
+                                    ><i class="fas fa-poll-h lead mr-2"></i> Reporte Cruzado</a
+                                >
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- FIN BIBLIOTECA -->
+            </div><!-- FIN MENU  -->
+        </div><!-- Fin Sidebar -->
+
+        <div class="w-100">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link text-dark dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                ><i class="fas fa-user-circle"></i> Admin </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="../index.html"> <i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav><!-- Fin Navbar -->
+
+            <!-- Page Content -->
+            <section id="content" class="bg-light w-100">
+                <div class="container">
+                    <h1 class="text-center text-dark">Entregas</h1>
+
+                    <center>
+                        <div class="col-3 mb-1" id="grupo_fechaEntregas">
+                            <label class="pb-0 col-auto col-form-label" for="fechaEntregas">Fecha Entrega:</label>
+                            <div class="col-auto">
+                                <input type="date" id="fechaEntregas" name="fechaEntregas" class="form-control">
+                            </div>
+                        </div>
+                    </center>
+                    <br>
+                    <!-- Tabla Entregas  -->
+                    <h5 class="text-dark">Libros a entregar: <span id="cantidadEnt">2</span></h5>
+
+                    <div class="table-responsive">
+                        <table id="tablaEntregas" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Código del Libro</th>
+                                    <th>Titulo</th>
+                                    <th>Autor</th>
+                                    <th>Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>L0001</td>
+                                    <td>Orgullo y Prejuicio</td>
+                                    <td>Jane Austin</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> <!-- Fin Tabla Entregas  -->
+            </section><!-- Fin Page Content -->
+        </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
+    integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+    crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Propio -->
+    <script src="../../js/biblioteca/Entregas.js"></script>
+</body>
+
+</html>
