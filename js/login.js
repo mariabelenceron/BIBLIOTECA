@@ -8,7 +8,7 @@ function inicioSesion(e) {
     e.preventDefault();
     let contra = document.querySelector('#password').value;
     if(contra==="admin"){
-        window.location.href = "http://127.0.0.1:5501/vistas/Home.html";
+        window.location.href = "https://62152c828d4309175295dfbb--sharp-lalande-6322a5.netlify.app/vistas/Home.html";
     }else{
         formularioLogin.reset();
     }
